@@ -18,7 +18,7 @@ class LoginTest extends PHPUnit_Framework_TestCase
      
     public function testlogin()
     {
-        $contrasena = new Contrasena('contrasena');
+       $contrasena = new login($this->pdo);
 
         $this->assertEquals('contrasena', $contrasena->contrasena());
     }
