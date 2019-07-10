@@ -1,4 +1,6 @@
 <?PHP
+class login
+{
 	$conn=new mysqli("localhost", "registro", "", "registro") or die("ConnectionFailed");
 	
 	$this->pdo = new PDO($GLOBALS['localhost'], $GLOBALS['registro'], $GLOBALS['']);
@@ -33,3 +35,7 @@
 	
 	}
 	}
+	
+}	
+	
+	?>
