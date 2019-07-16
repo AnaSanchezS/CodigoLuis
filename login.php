@@ -1,7 +1,7 @@
 <?PHP
 class login
 {
-	$conn=new mysql("localhost", "registro", "", "registro") or die("ConnectionFailed");
+	$conn=new mysqli("localhost", "registro", "", "registro") or die("ConnectionFailed");
 	
 	$this->pdo = new PDO($GLOBALS['localhost'], $GLOBALS['registro'], $GLOBALS['']);
 	
