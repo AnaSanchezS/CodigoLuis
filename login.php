@@ -5,7 +5,7 @@ class login
     {
 	$usuario="Luis";
 	$contrasenaEncriptada=password_hash("Hola", PASSWORD_DEFAULT);
-	$queryIngresarUsuario="INSERT INTO `users`(`usuario`, `contrasena`) VALUES ('$usuario','$contrasenaEncriptada')";
+	$queryIngresarUsuario="INSERT INTO `users`( `contrasena`) VALUES ('$contrasenaEncriptada')";
 	$resultIngresarUsuario=mysqli_query($conn,$queryIngresarUsuario);
 	
 	//check if form was submitted
