@@ -1,7 +1,8 @@
 <?PHP
 class login
 {
-	public function contrasena($contrasena)
+	public function contrasena(PDO $contrasena)
+		 $this->pdo = $contrasena;
     {
 	$usuario="Luis";
 	$contrasenaEncriptada=password_hash("Hola", PASSWORD_DEFAULT);
