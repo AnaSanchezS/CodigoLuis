@@ -13,7 +13,7 @@ class LoginTest extends PHPUnit_Framework_TestCase
 	$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$this->pdo->query("CREATE TABLE users ( contrasena VARCHAR(200) NOT NULL)");
 	
-	    $contrasena = "contrasena";
+	  //  $contrasena = "contrasena";
 
     }
 
