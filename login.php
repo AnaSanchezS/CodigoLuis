@@ -11,7 +11,7 @@ class login
 	//check if form was submitted
 	//$usuario = $_POST['usuario']; //get input text
 	// $psw = $_POST['contrasena'];
-	$query1 = "SELECT * FROM users WHERE usuario = '$usuario'";
+	$query1 = "SELECT * FROM users ;
 	$result = mysqli_query($conn, $query1);
 	if(mysqli_num_rows($result)!=0){
 	while($data= mysqli_fetch_assoc($result) ) {
