@@ -1,6 +1,7 @@
 <?PHP
 class login
 {
+	private $contrasena;
 	public function contrasena(PDO $contrasena)
 		
     {
