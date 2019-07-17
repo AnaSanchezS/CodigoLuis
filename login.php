@@ -5,7 +5,7 @@ class login
 	
 	//$this->pdo = new PDO($GLOBALS['localhost'], $GLOBALS['registro'], $GLOBALS['']);
 	
-	$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	//$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	$this->pdo->query("CREATE TABLE users (usuario VARCHAR(50) NOT NULL, contrasena VARCHAR(200) NOT NULL)");
 	
