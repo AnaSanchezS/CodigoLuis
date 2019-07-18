@@ -5,6 +5,7 @@ class login
 	public function contrasena()
 		
     {
+	$conn=new mysqli('localhost','root','','hello_world_test');
 	$usuario="Luis";
 	$contrasenaEncriptada=password_hash("Hola", PASSWORD_DEFAULT);
 	$queryIngresarUsuario="INSERT INTO `users`( `contrasena`) VALUES ('$contrasenaEncriptada')";
