@@ -28,7 +28,8 @@ class LoginTest extends PHPUnit_Framework_TestCase
     {
        $contrasena = new login($this->pdo);
 
-        $this->assertEquals(password_hash('contrasena',PASSWORD_DEFAULT), $contrasena->contrasena());
+        //$this->assertEquals(password_hash('contrasena',PASSWORD_DEFAULT), $contrasena->contrasena());
+	   $this->assertEquals('contrasena', $contrasena->contrasena());
     }
 
     
