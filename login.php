@@ -7,7 +7,7 @@ class login
     {
 	$conn=new mysqli('localhost','root','','hello_world_test');
 	$usuario="Luis";
-	$contrasenaEncriptada=password_hash("Hola", PASSWORD_DEFAULT);
+	$contrasenaEncriptada=password_hash("contrasena", PASSWORD_DEFAULT);
 	$queryIngresarUsuario="INSERT INTO `users`( `contrasena`) VALUES ('$contrasenaEncriptada')";
 	$resultIngresarUsuario=mysqli_query($conn,$queryIngresarUsuario);
 	
