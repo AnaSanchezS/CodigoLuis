@@ -22,7 +22,7 @@ class login
 	$contrasena = $data['contrasena'];
 	
 	}
-	if(password_verify($contrasena)){
+	if(password_verify('contrasena',$contrasena)){
 	
 	print("Sesion Iniciada <br>");
 	print($contrasena);
