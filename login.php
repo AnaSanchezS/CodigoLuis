@@ -24,7 +24,7 @@ class login
 	}
 	if(password_verify('contrasena',$contrasena)){
 	
-	print("Sesion Iniciada <br>");
+	//print("Sesion Iniciada <br>");
 	print($contrasena);
 	}
 	
