@@ -2,7 +2,7 @@
 class login
 {
 	private $pdo;
-	public function contrasena(PDO $pdo)
+	public function contrasena()
 		
     {
 	$usuario="Luis";
